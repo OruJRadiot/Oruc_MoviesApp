@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UpcomingMovieItemCollectionViewCell" id="gTV-IL-0wX" customClass="UpcomingMovieItemCollectionViewCell" customModule="Oruc_MoviesApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qo-ll-lCO" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joker-movie-poster" translatesAutoresizingMaskIntoConstraints="NO" id="KBZ-el-TBg">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="bg-main"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KBZ-el-TBg" secondAttribute="trailing" id="YYk-wz-MXm"/>
+                            <constraint firstItem="KBZ-el-TBg" firstAttribute="leading" secondItem="4Qo-ll-lCO" secondAttribute="leading" id="c2v-nb-jL4"/>
+                            <constraint firstAttribute="bottom" secondItem="KBZ-el-TBg" secondAttribute="bottom" id="r12-9G-xAh"/>
+                            <constraint firstItem="KBZ-el-TBg" firstAttribute="top" secondItem="4Qo-ll-lCO" secondAttribute="top" id="w2u-g2-eJg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Qo-ll-lCO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Z4-bB-kaq"/>
+                <constraint firstItem="4Qo-ll-lCO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="92q-M2-fFY"/>
+                <constraint firstAttribute="bottom" secondItem="4Qo-ll-lCO" secondAttribute="bottom" id="Mmi-ro-02k"/>
+                <constraint firstAttribute="trailing" secondItem="4Qo-ll-lCO" secondAttribute="trailing" id="Wao-nS-ruf"/>
+            </constraints>
+            <size key="customSize" width="146" height="852"/>
+            <connections>
+                <outlet property="upcomingMovieItemImage" destination="KBZ-el-TBg" id="4C8-gF-Nj5"/>
+            </connections>
+            <point key="canvasLocation" x="158.46153846153845" y="250.94786729857819"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="joker-movie-poster" width="857" height="1280"/>
+        <namedColor name="bg-main">
+            <color red="0.16099999845027924" green="0.16899999976158142" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
